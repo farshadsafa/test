@@ -1,25 +1,4 @@
 
-
---both are correct--
-
-
-
-
--- Variables to Change:
--- - SuperTypeID: (currently set to 1, 2, and 8).
--- - Status ID: (currently set to 123).
--- - Minimum Order Count: (currently set to 3).
--- - Date Range:  (currently set to 90-30 days ago).
--- - CityID:  (currently set to 7, 1, 2, 4, 6, 3, 5, 14).
--- - ProteinFirstOrderDate: (currently Null).
-
--- Selects:
--- customer_id
--- city
--- cityid (aliased as CityID)
--- SnappFoodFirstOrderIsJEK
-
-
 select sub1.customer_id,city,cityid,SnappFoodFirstOrderIsJEK
 
 from (select customer_id, count(*) as number_of_orders

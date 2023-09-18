@@ -21,21 +21,6 @@ where ProteinFirstOrderDate is null;
 
 
 
--- Variables to Change:
--- - FoodOrders:  (currently set to 3).
--- - SuperTypeID:  (currently set to 1, 2, and 8).
--- - LastCityID:  (currently set to 1, 2, 3, 4, 5, 6, 7, and 14).
--- - Date Range:  (currently set to 90-30 days ago).
--- - ProteinFirstOrderDate: (currently Null).
-
--- Selects:
-
---    UserID,
---   SnappFoodFirstOrderIsJEK,
---   LastCityID AS cityid,
---    City.title
-
-
 
 
 select UserID, SnappFoodFirstOrderIsJEK, LastCityID as cityid, City.title
